@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.daileymichael.wgutracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WGUTracker">
+        <activity
+            android:name=".UI.Activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Activity.TermListActivity"
+            android:label="@string/title_item_list"
+            android:parentActivityName=".UI.Activity.MainActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.daileymichael.wgutracker.UI.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.TermDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".UI.Activity.TermListActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.Activity.TermListActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.TermEditorActivity"
+            android:label="@string/title_activity_term_editor"
+            android:parentActivityName=".UI.Activity.TermListActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.Activity.TermListActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.CourseListActivity"
+            android:label="@string/title_course_list"
+            android:parentActivityName=".UI.Activity.MainActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.daileymichael.wgutracker.UI.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.CourseDetailActivity"
+            android:label="@string/title_course_detail"
+            android:parentActivityName=".UI.Activity.CourseListActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.Activity.CourseListActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.CourseEditorActivity"
+            android:label="@string/title_activity_course_editor"
+            android:parentActivityName=".UI.Activity.CourseListActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.Activity.CourseListActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.AssessmentListActivity"
+            android:label="@string/title_assessment_list"
+            android:parentActivityName=".UI.Activity.MainActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.daileymichael.wgutracker.UI.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.AssessmentDetailActivity"
+            android:label="@string/title_assessment_detail"
+            android:parentActivityName=".UI.Activity.AssessmentListActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.Activity.AssessmentListActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.AssessmentEditorActivity"
+            android:label="@string/title_activity_assessment_editor"
+            android:parentActivityName=".UI.Activity.AssessmentListActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.Activity.AssessmentListActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.MentorEditorActivity"
+            android:label="@string/title_activity_mentor_editor"
+            android:parentActivityName=".UI.Activity.CourseListActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.Activity.CourseListActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.NoteDetailActivity"
+            android:label="@string/title_note_detail"
+            android:parentActivityName=".UI.Activity.CourseListActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.Activity.CourseListActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.NoteEditorActivity"
+            android:label="@string/title_activity_note_editor"
+            android:parentActivityName=".UI.Activity.CourseListActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UI.Activity.CourseListActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".UI.Activity.MainActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.daileymichael.wgutracker.UI.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UI.Activity.SharingActivity"
+            android:label="@string/title_activity_sharing"
+            android:parentActivityName=".UI.Activity.MainActivity"
+            android:theme="@style/WGU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.daileymichael.wgutracker.UI.Activity.MainActivity" />
+        </activity>
+
+        <receiver android:name=".Receivers.AlarmReceiver" />
+    </application>
+
+</manifest>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.daileymichael.wgutracker.UI.Activity.AssessmentDetailActivity"
+    tools:showIn="@layout/activity_main"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <TextView
+                android:id="@+id/label_terms"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_terms" />
+
+            <ImageButton
+                android:background="@color/transparent"
+                android:layout_gravity="bottom"
+                android:id="@+id/btn_terms"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="showTerms"
+                android:src="@drawable/ic_home_term"
+                android:contentDescription="@string/view_terms" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <TextView
+                android:id="@+id/label_courses"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_courses" />
+
+            <ImageButton
+                android:background="@color/transparent"
+                android:layout_gravity="bottom"
+                android:id="@+id/btn_courses"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="showCourses"
+                android:src="@drawable/ic_home_course"
+                android:contentDescription="@string/view_courses" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <TextView
+                android:id="@+id/label_assessments"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_assessments" />
+
+            <ImageButton
+                android:background="@color/transparent"
+                android:layout_gravity="bottom"
+                android:id="@+id/btn_assessments"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="showAssessments"
+                android:src="@drawable/ic_home_assessment"
+                android:contentDescription="@string/view_assessments" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

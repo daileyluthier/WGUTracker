@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="note_title_label" type="id"/>
+    <item name="add_note" type="id"/>
+    <item name="note_group_label" type="id"/>
+    <item name="assessment_list_group" type="id"/>
+    <item name="add_assessment" type="id"/>
+    <item name="assessment_group_label" type="id"/>
+    <item name="mentor_list_group" type="id"/>
+    <item name="add_mentor" type="id"/>
+    <item name="mentor_group_label" type="id"/>
+    <item name="course_end_label" type="id"/>
+    <item name="assessment_date_field" type="id"/>
+    <item name="assessment_date_label" type="id"/>
+    <item name="assessment_type_field" type="id"/>
+    <item name="assessment_type_label" type="id"/>
+    <item name="assessment_title_field" type="id"/>
+    <item name="assessment_title_label" type="id"/>
+    <item name="term_spinner" type="id"/>
+    <item name="assessment_title" type="id"/>
+    <item name="type_spinner" type="id"/>
+    <item name="assessment_date" type="id"/>
+    <item name="course_end" type="id"/>
+    <item name="course_end_field" type="id"/>
+    <item name="mentor_list" type="id"/>
+    <item name="note_list" type="id"/>
+    <item name="delete_course" type="id"/>
+</resources>
